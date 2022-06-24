@@ -1,0 +1,6 @@
+function [A] = DH(a,alpha,d,theta)
+A = [cos(theta)  -sin(theta)*round(cos(alpha))  sin(theta)*round(sin(alpha))    a*cos(theta)
+     sin(theta)  cos(theta)*round(cos(alpha))   -cos(theta)*round(sin(alpha))   a*sin(theta)
+     0          round(sin(alpha))                        0                       d
+     0                  0                                0                       1];
+end
